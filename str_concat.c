@@ -6,6 +6,7 @@
 * Return: pointer to the concatenated string; NULL otherwise
 * Aladin Bensassi / Kais Boumaiza
 */
+
 char *str_concat(char *s1, char *s2)
 {
 char *concat_str;
