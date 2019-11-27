@@ -8,6 +8,7 @@
 * is greater; 0 if strings are equal
 * Aladin Bensassi / Kais Boumaiza
 */
+
 int _strcmp2(const char *s1, const char *s2)
 {
 int i, result;
