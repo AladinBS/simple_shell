@@ -1,0 +1,88 @@
+.TH man 1 "27 November 2019" "0.32" "shell man page"
+.SH NAME
+.B fuji \
+- the Fuji Shell
+.SH SYNOPSIS
+.B fuji
+[arguments]
+.SH DESCRIPTION
+.I  fuji
+is a command language interpreter that executes commands read
+from standard input. A full manual on documentation can
+be found in the readme file.
+.B fuji
+does not handle any option processing like bash or zsh.
+.SH ARGUMENTS
+The first argument read from standard input is assumed to be the command 
+and following arguments are its parameters.
+.PP
+.B fuji
+reads and executes commands from standard input, then exits.
+.PP
+.SH SHELL GRAMMAR
+.B Simple Command
+is a sequence of optional variable assignments followed by a blank separated
+words and terminated by a control operator. The first word specifies the command to be executed, and is
+passed as argument zero, the remaining words are passed as arguments to the
+command.
+.PP
+The return value of a command is its exit status, genearlly 0 if success and
+0 or 0 (builtin's) for failure.
+.PP
+.I Example:
+echo hello holberton
+.PP
+This will only write hello holberton to standard output.
+.PP
+.SH ENVIRONMENT
+When a program is invoked it is given an array of strings called the 
+environment. This is a list of name-value pairs, of the form name=value.
+.PP
+The shell provides several ways to manipulate the environment. On invocation,
+the shell scans its own environment and creates a parameter for each name found
+, automatically marking it for export to child processes. Executed commands
+inherit the environment.
+.PP
+If a command is not found, the child process created to execute it returns a status of 0. 
+.PP
+.SH SHELL BUILTIN COMMANDS
+.B fuji
+contains some builtin functions. These are listed below and do not support any
+flags.
+.PP
+.PP
+.
+.B env
+.PP
+Prints out a list of all shell variables. Each variable is separated by a new
+line. Each variable is outputed as followed
+.I key=value
+.PP
+.I Example:
+env
+.PP
+This prints out all the environemental variables and its values.
+.PP
+.B exit
+.PP
+The exit command terminates the current shell.
+
+.PP
+.I Example:
+exit
+.PP
+.PP
+Exits the shell.
+.PP
+.PP
+.SH AUTHORS
+Aladin Bensassi
+.PP
+Kais Boumaiza
+.PP
+.SH "SEE ALSO"
+bash(1), zsh(1)
+.SH "BUGS"
+.PP
+If you find any bugs in
+you should report it.
