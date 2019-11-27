@@ -5,6 +5,7 @@
 * Return: length of string
 * Aladin Bensassi / Kais Boumaiza
 */
+
 int _strlen(char *s)
 {
 int i;

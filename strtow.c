@@ -5,6 +5,7 @@
 * Return: a pointer to an array
 * Aladin Bensassi / Kais Boumaiza
 */
+
 char **strtow(char *str)
 {
 char **words;
