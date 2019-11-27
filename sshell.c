@@ -7,6 +7,7 @@
 * Return: Always 0 (Success)
 * Aladin Bensassi / Kais Boumaiza
 */
+
 int main(int argc, char *argv[], char **env)
 {
 char *ptr = NULL;
