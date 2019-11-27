@@ -1,21 +1,30 @@
+#include "holberton.h"
+#include <stdio.h>
 /**
-* _strncmp - Compares n bytes of a string.
-* @s1: First string.
-* @s2: Second string.
-* @n: Number of bytes to be compared.
-* Return: 0 if equal, difference otherwise.
+* _strcmp - compares the ascii sum of characters in two strings
+* @dest: pointer
+* @src: pointer
+* Return: integer. positive if the first string is bigger
 */
-short _strncmp(char *s1, char *s2, int n)
+int _strcmp(char *dest, char *src)
 {
-int i = 0;
+int i = 0, k = 0;
 
-while (i < n && *(s1 + i) && *(s2 + i))
+while (dest[i] != '\0')
 {
-if (*(s1 + i) != *(s2 + i))
-return (*(s1 + i) - *(s2 + i));
+if (dest[i] > src[i])
+{
+k = dest[i] - src[i];
+break;
+}
+else if (dest[i] < src[i])
+{
+k = dest[i] - src[i];
+break;
+}
 i++;
 }
-if (i < n && *(s1 + i) != *(s2 + i))
-return (*(s1 + i) - *(s2 + i));
-return (0);
+if (src[i] != '\0' && k == 0)
+k = -src[i];
+return (k);
 }
