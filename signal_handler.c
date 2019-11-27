@@ -4,6 +4,7 @@
 * @signo: signal number
 * Aladin Bensassi / Kais Boumaiza
 */
+
 void signal_handler(int signo)
 {
 if (signo == SIGINT)

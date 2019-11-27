@@ -6,7 +6,6 @@
 * Return: pointer to the linked list
 * Aladin Bensassi / Kais Boumaiza
 */
-
 void check_path(char **string, char **env)
 {
 char *str1, *str2, *path;
