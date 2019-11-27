@@ -2,7 +2,7 @@
 /**
 * _strcmp2 - compares
 * @s1: string 1 to be compared
-* @s2: string 2 to be compared 
+* @s2: string 2 to be compared
 * Return: integer < 0 if string 1 first unmatched character ASCII value is
 * less than string 2
 * Aladin Bensassi / Kais Boumaiza
