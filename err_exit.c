@@ -5,6 +5,7 @@
 * @status: exits with this status
 * Aladin Bensassi / Kais Boumaiza
 */
+
 void err_exit(char *argv, int status)
 {
 (void)status;
