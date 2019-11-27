@@ -6,6 +6,7 @@
 * @n: the number of strings to free
 * Aladin Bensassi / Kais Boumaiza
 */
+
 void free_cptrn(int status, const unsigned int n, ...)
 {
 unsigned int i;

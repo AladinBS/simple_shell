@@ -6,6 +6,7 @@
 * Return: success: 1
 * Aladin Bensassi / Kais Boumaiza
 */
+
 int fuji_env(char **args, char **env)
 {
 int i, len;
