@@ -5,6 +5,7 @@
 * Return: integer
 * Aladin Bensassi / Kais Boumaiza
 */
+
 int _atoi(char *s)
 {
 int i, sign;
