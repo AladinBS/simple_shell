@@ -1,6 +1,6 @@
 .TH man 1 "27 November 2019" "simple_shell man page"
 .SH NAME
-.B simple  \
+.B simple       \
 - the simple Shell
 .SH SYNOPSIS
 .B simple
